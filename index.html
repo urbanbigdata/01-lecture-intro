@@ -1,1 +1,275 @@
-“Hello, world”
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Urban Big Data Analytics - Lecture 1</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/astemir-almov-265122-unsplash.jpg" data-state="dimbg_dark">
+				<!-- Slide 1 -->
+					<h1>Urban Big Data Analytics</h1><br>
+
+					<i>Course Introduction</i><br><br>
+					
+					<p>
+					<small> July 18, 2018<br><br>
+					
+					Instructor: <a href="http://andyhong.org" target="_blank">Andy Hong</a>, <i>PhD</i><br>
+					
+					Postdoctoral Research and Teaching Fellow<br>
+					School of Population and Public Health<br>
+					University of British Columbia
+					</small>
+					</p>
+				</section>
+				<section>
+				<!-- Slide 2 -->
+					<h2>A bit about me</h2><br>
+					<img src="images/andy_profile_round.png" style="float: right; margin-left: 10px; margin-bottom: 10px">
+					<p align="left" style="font-size:80%;">
+					&#9656; Postdoctoral fellow in the School of Population and Public Health<br>
+					&#9656; Co-founder of <a href="https://twitter.com/healthycitynet" target="_blank">Healthy Cities Network</a><br>
+					&#9656; Studied informatics, geography, and public policy<br>
+					&#9656; Bike commuter and hiker<br>
+					&#9656; A father of two kids<br>
+					<div align="left">
+						<a href="https://www.andyhong.org/" target="_blank">
+							<img src="images/homepage.png" height="50px" alt="Homepage"></a>
+						<a href="https://twitter.com/DrAndyHong" target="_blank">
+							<img src="images/twitter.png" height="50px" alt="Twitter"></a>
+						<a href="https://www.linkedin.com/in/DrAndyHong" target="_blank">
+							<img src="images/linkedin.png" height="50px" alt="LinkedIn"></a>
+					</div>
+					</p>
+				</section>
+				<section>
+				<!-- Slide 3 -->
+					<h2>Course overview</h2><br>
+					<ul>
+						<li>Updated course syllabus (link)</li>
+						<li>Assignments</li>
+						<li>Group sessions</li>
+						<li>Group project</li>
+					</ul>
+				</section>
+				<section>
+				<!-- Slide 4 -->
+					<table>
+						<thead>
+							<tr>
+								<th>What this course is</th>
+								<th>What this course is NOT</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="width: 50%; vertical-align:top">
+									<ul>
+										<li>Introduction to <i>urban</i> data science</li>
+										<li>Learn to think and talk like data scientists</li>
+										<li>Learn how to wrangle, explore, and analyze <i>data</i></li>
+									</ul>
+								</td>	
+								<td style="width: 50%; vertical-align:top"> 
+									<ul>
+										<li>Learn how to program</li>
+										<li>Learn statistics and math</li>
+										<li>Learn GIS and mapping skils</li>
+									</ul>	
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>					
+				<section>
+				<!-- Slide 5 -->
+					<h2>Let's break the ice</h2>
+					<ul>
+						<li>Tell us your name and where you are from</li>
+						<li>Your job or school major</li>
+						<li>Why are you taking this course?</li>
+						<li>How good is your coding skills? (from 1 to 5)</li>
+					</ul>	
+					<p><img src="images/break_ice.png"></p>
+				</section>	
+				<section>
+				<!-- Slide 6 -->
+				<h2>What is data science?</h2>
+					<img src="images/data-science-venn-diagram_1.png" height="540" width="570">
+				</section>
+				<section>
+				<!-- Slide 7 -->
+				<h2>What is <u>urban</u> data science?</h2>	
+					<img src="images/data-science-venn-diagram_2.png" height="540" width="570">
+				</section>
+				<section data-background-image="images/urban_air_pollution.jpg" data-state="dimbg_dark">
+				<!-- Slide 8 -->				
+				<h2><img src="images/question_white.png" height="150px" style="margin-right: 15px">What are urban issues?</h2>
+					<ul>
+						<li class="fragment fade-up">Health issues: air pollution, noise pollution</li>
+						<li class="fragment fade-up">Environmental issues: climate change (coastal cities), extreme heat</li>
+						<li class="fragment fade-up">Traffic congestion, safety, crime</li>
+						<li class="fragment fade-up">Housing, income inequality, racial segregation</li>
+					</ul>
+				</section>
+				<section>
+				<!-- Slide 9 -->	
+					<h3>Using data science to solve urban heat island issues</h3>
+					<iframe width="700" height="500" src="https://youtube.com/embed/WN-nY1l0VM0" allowfullscreen="allowfullscreen">
+					</iframe>					
+				</section>
+				<section>
+				<!-- Slide 10 -->	
+					<h2>Urban "big" data</h2><br>
+					<ul>
+						<li>Every day, we create 2.5 quintillion bytes of data</li>
+						<li>90% of the data today has been created in the last 2 years alone.</li>
+					</ul>					
+				</section>
+				<section data-background-image="images/big_data_background.jpg" data-state="dimbg_darker">
+				<!-- Slide 11 -->	
+					<h2>What is big data?</h2>
+					<ul>
+						<li class="fragment fade-up">Three Vs: Volume, Velocity, Variety</li>
+						<li class="fragment fade-up">Very large data that cannot be possibly handled with typical softwares, like Excel</li>
+						<li class="fragment fade-up">Data volume contiues to increase. ex) Sensor data (IoT), crowdsourced data</li>
+						<li class="fragment fade-up">Everything as data, not just text but also images, videos, tweets, etc.</li>
+					</ul>
+								
+				</section>
+				<section>
+				<!-- Slide 12 -->	
+					<h3>Big data = Structured + Unstructured data</h3>
+					<img src="images/bigdata_types.png" width="700" height="540"  style="background:transparent; border:none">
+				</section>
+				<section>
+				<!-- Slide 13 -->	
+					<h3>Big data trend</h3>
+					<img src="images/bigdata_trend.png" width="700" height="540"  style="background:transparent; border:none">
+				</section>
+				<section>
+				<!-- Slide 14 -->	
+					<h3>Smart cities and Internet of Things</h3>
+					<img src="images/smartcity1.png" width="600" height="550"  style="background:transparent; border:none">
+				</section>
+				<section>
+				<!-- Slide 15 -->	
+					<h3>Real-time sensors = Big data</h3>
+					<img src="images/IoT_examples.png" width="1100" height="550"  style="background:transparent; border:none">
+				</section>
+				<section>
+				<!-- Slide 16 -->	
+					<h3>City Sensor</h3>
+					<img src="images/smartcity2.png" width="11000" height="550"  style="background:white; border:none">
+				</section>
+				<section>
+				<!-- Slide 17 -->	
+					<h3>Rise of spatial big data</h3>
+					<img src="images/spatialdata.png" width="900" height="550"  style="background:white; border:none">
+				</section>
+				<section>
+				<!-- Slide 18 -->	
+					<h3>Age of cloud computing</h3>
+					
+					<table>
+						<thead>
+							<tr>
+								<th>Pre cloud days</th>
+								<th>Post cloud days</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="width: 50%; vertical-align:top">
+									<ul>
+										<li>Downloading and patching together satellite images</li>
+										<li>Long time to load gigabytes of satellite images</li>
+										<li>Take several days to process large raster data</li>
+									</ul>
+								</td>	
+								<td style="width: 50%; vertical-align:top"> 
+									<ul>
+										<li>All the sattellite data stored on a public cloud</li>
+										<li>No need to install software. Everything in a browser</li>
+										<li>Google Earth Engine: data processing on the fly</li>
+									</ul>	
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+				</section>
+				<section>
+				<!-- Slide 19 -->	
+					<h3>Google Earth Engine Demo</h3>
+					Earth engine code editor: 
+					<a href="https://code.earthengine.google.com/", target="_blank">https://code.earthengine.google.com/</a>
+				</section>
+				<section>
+				<!-- Slide 18 -->	
+					
+				</section>
+				<section>
+				<!-- Slide 19 -->	
+					
+				</section>
+				<section>
+				<!-- Slide 20 -->	
+					
+				</section>
+				<section>
+				<!-- Slide 20 -->	
+					
+				</section>
+				<section>
+				<!-- Slide 8 -->	
+					
+				</section>
+				<section>
+				<!-- Slide 8 -->	
+					
+				</section>				
+				
+				
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

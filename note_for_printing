@@ -1,0 +1,19 @@
+https://github.com/hakimel/reveal.js#pdf-export
+
+Instructions
+
+Open your presentation with print-pdf included in the query string i.e. http://localhost:8000/?print-pdf. You can test this with revealjs.com?print-pdf.
+
+If you want to include speaker notes in your export, you can append showNotes=true to the query string: http://localhost:8000/?print-pdf&showNotes=true
+
+1. Open the in-browser print dialog (CTRL/CMD+P).
+
+2. Change the Destination setting to Save as PDF.
+
+3. Change the Layout to Landscape.
+
+4. Change the Margins to None.
+
+5. Enable the Background graphics option.
+
+6. Click Save.
